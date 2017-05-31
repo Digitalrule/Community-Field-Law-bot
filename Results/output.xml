@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170531 17:47:27.250" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<robot generated="20170531 17:54:05.368" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
 <suite source="/Users/ramseykilani/Documents/Development/Robot_scripts/Community Law Bot/tests/CLB.robot" id="s1" name="CLB">
 <test id="s1-t1" name="Run Button and Reset">
 <kw type="setup" name="Begin Web Test" library="common">
@@ -9,57 +9,83 @@
 <arg>http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/</arg>
 <arg>gc</arg>
 </arguments>
-<msg timestamp="20170531 17:47:27.347" level="INFO">Opening browser 'gc' to base url 'http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/'</msg>
-<status status="PASS" endtime="20170531 17:47:30.564" starttime="20170531 17:47:27.347"></status>
+<msg timestamp="20170531 17:54:05.469" level="INFO">Opening browser 'gc' to base url 'http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/'</msg>
+<status status="PASS" endtime="20170531 17:54:08.731" starttime="20170531 17:54:05.469"></status>
 </kw>
-<status status="PASS" endtime="20170531 17:47:30.565" starttime="20170531 17:47:27.346"></status>
+<status status="PASS" endtime="20170531 17:54:08.732" starttime="20170531 17:54:05.468"></status>
 </kw>
 <kw name="Button Click" library="CLB">
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>10s</arg>
+<arg>5s</arg>
 </arguments>
-<msg timestamp="20170531 17:47:40.568" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20170531 17:47:40.568" starttime="20170531 17:47:30.567"></status>
+<msg timestamp="20170531 17:54:13.734" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170531 17:54:13.734" starttime="20170531 17:54:08.733"></status>
 </kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks a button identified by `locator`.</doc>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>xpath=//*[@id="secondary"]/div/aside[1]/a</arg>
 </arguments>
-<msg timestamp="20170531 17:47:40.569" level="INFO">Clicking button 'xpath=//*[@id="secondary"]/div/aside[1]/a'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170531 17:47:41.000" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170531 17:47:41.000" starttime="20170531 17:47:40.611"></status>
+<msg timestamp="20170531 17:54:13.735" level="INFO">Clicking element 'xpath=//*[@id="secondary"]/div/aside[1]/a'.</msg>
+<status status="PASS" endtime="20170531 17:54:13.813" starttime="20170531 17:54:13.734"></status>
 </kw>
-<msg timestamp="20170531 17:47:41.004" level="FAIL">ValueError: Element locator 'xpath=//*[@id="secondary"]/div/aside[1]/a' did not match any elements.</msg>
-<status status="FAIL" endtime="20170531 17:47:41.004" starttime="20170531 17:47:40.568"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170531 17:54:18.815" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170531 17:54:18.816" starttime="20170531 17:54:13.813"></status>
 </kw>
-<status status="FAIL" endtime="20170531 17:47:41.005" starttime="20170531 17:47:30.566"></status>
+<status status="PASS" endtime="20170531 17:54:18.816" starttime="20170531 17:54:08.732"></status>
+</kw>
+<kw name="Reset Browser Page" library="CLB">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170531 17:54:18.952" starttime="20170531 17:54:18.817"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20170531 17:54:18.954" level="INFO">Opening browser 'gc' to base url 'http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/'</msg>
+<status status="PASS" endtime="20170531 17:54:21.916" starttime="20170531 17:54:18.953"></status>
+</kw>
+<status status="PASS" endtime="20170531 17:54:21.916" starttime="20170531 17:54:18.816"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20170531 17:54:31.917" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20170531 17:54:31.918" starttime="20170531 17:54:21.916"></status>
 </kw>
 <kw type="teardown" name="End Web Test" library="common">
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170531 17:47:41.146" starttime="20170531 17:47:41.006"></status>
+<status status="PASS" endtime="20170531 17:54:32.036" starttime="20170531 17:54:31.918"></status>
 </kw>
-<status status="PASS" endtime="20170531 17:47:41.146" starttime="20170531 17:47:41.005"></status>
+<status status="PASS" endtime="20170531 17:54:32.037" starttime="20170531 17:54:31.918"></status>
 </kw>
-<status status="FAIL" endtime="20170531 17:47:41.147" critical="yes" starttime="20170531 17:47:27.346">ValueError: Element locator 'xpath=//*[@id="secondary"]/div/aside[1]/a' did not match any elements.</status>
+<status status="PASS" endtime="20170531 17:54:32.037" critical="yes" starttime="20170531 17:54:05.468"></status>
 </test>
 <doc>This is a bot to vote multiple times for a project on the comminity field law site</doc>
-<status status="FAIL" endtime="20170531 17:47:41.151" starttime="20170531 17:47:27.253"></status>
+<status status="PASS" endtime="20170531 17:54:32.039" starttime="20170531 17:54:05.371"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="CLB" pass="0">CLB</stat>
+<stat fail="0" id="s1" name="CLB" pass="1">CLB</stat>
 </suite>
 </statistics>
 <errors>

@@ -13,6 +13,5 @@ Run Button and Reset
     CLB.Button Click
     CLB.Reset Browser Page
     Sleep  10s
-    Open Browser  ghkghk
 
 *** Keywords ***

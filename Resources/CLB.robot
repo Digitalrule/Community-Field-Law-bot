@@ -6,8 +6,9 @@ Library  Selenium2Library
 *** Keywords ***
 
 Button Click
-    Sleep  10s
-    Click Button  xpath=//*[@id="secondary"]/div/aside[1]/a
+    Sleep  5s
+    Click Element  xpath=//*[@id="secondary"]/div/aside[1]/a
+    Sleep  5s
 
 Reset Browser Page
     Close Browser
