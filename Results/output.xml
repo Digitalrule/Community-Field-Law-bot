@@ -1,81 +1,375 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170531 17:54:05.368" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<robot generated="20170531 18:54:32.939" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
 <suite source="/Users/ramseykilani/Documents/Development/Robot_scripts/Community Law Bot/tests/CLB.robot" id="s1" name="CLB">
 <test id="s1-t1" name="Run Button and Reset">
 <kw type="setup" name="Begin Web Test" library="common">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
-<arg>http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/</arg>
+<arg>${Community_Site}</arg>
 <arg>gc</arg>
 </arguments>
-<msg timestamp="20170531 17:54:05.469" level="INFO">Opening browser 'gc' to base url 'http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/'</msg>
-<status status="PASS" endtime="20170531 17:54:08.731" starttime="20170531 17:54:05.469"></status>
+<msg timestamp="20170531 18:54:33.087" level="INFO">Opening browser 'gc' to base url 'http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/'</msg>
+<status status="PASS" endtime="20170531 18:54:36.245" starttime="20170531 18:54:33.087"></status>
 </kw>
-<status status="PASS" endtime="20170531 17:54:08.732" starttime="20170531 17:54:05.468"></status>
+<status status="PASS" endtime="20170531 18:54:36.246" starttime="20170531 18:54:33.087"></status>
 </kw>
+<kw type="for" name="${INDEX} IN RANGE [ 1 | ${Runs} ]">
+<kw type="foritem" name="${INDEX} = 1">
 <kw name="Button Click" library="CLB">
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>5s</arg>
-</arguments>
-<msg timestamp="20170531 17:54:13.734" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20170531 17:54:13.734" starttime="20170531 17:54:08.733"></status>
-</kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>xpath=//*[@id="secondary"]/div/aside[1]/a</arg>
 </arguments>
-<msg timestamp="20170531 17:54:13.735" level="INFO">Clicking element 'xpath=//*[@id="secondary"]/div/aside[1]/a'.</msg>
-<status status="PASS" endtime="20170531 17:54:13.813" starttime="20170531 17:54:13.734"></status>
+<msg timestamp="20170531 18:54:36.247" level="INFO">Clicking element 'xpath=//*[@id="secondary"]/div/aside[1]/a'.</msg>
+<status status="PASS" endtime="20170531 18:54:36.337" starttime="20170531 18:54:36.247"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>5s</arg>
+<arg>1m</arg>
 </arguments>
-<msg timestamp="20170531 17:54:18.815" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20170531 17:54:18.816" starttime="20170531 17:54:13.813"></status>
+<msg timestamp="20170531 18:55:36.339" level="INFO">Slept 1 minute</msg>
+<status status="PASS" endtime="20170531 18:55:36.339" starttime="20170531 18:54:36.337"></status>
 </kw>
-<status status="PASS" endtime="20170531 17:54:18.816" starttime="20170531 17:54:08.732"></status>
+<status status="PASS" endtime="20170531 18:55:36.339" starttime="20170531 18:54:36.247"></status>
 </kw>
 <kw name="Reset Browser Page" library="CLB">
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170531 17:54:18.952" starttime="20170531 17:54:18.817"></status>
+<status status="PASS" endtime="20170531 18:55:36.412" starttime="20170531 18:55:36.340"></status>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
-<arg>http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/</arg>
+<arg>${Community_Site}</arg>
 <arg>gc</arg>
 </arguments>
-<msg timestamp="20170531 17:54:18.954" level="INFO">Opening browser 'gc' to base url 'http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/'</msg>
-<status status="PASS" endtime="20170531 17:54:21.916" starttime="20170531 17:54:18.953"></status>
+<msg timestamp="20170531 18:55:36.413" level="INFO">Opening browser 'gc' to base url 'http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/'</msg>
+<status status="PASS" endtime="20170531 18:55:39.330" starttime="20170531 18:55:36.412"></status>
 </kw>
-<status status="PASS" endtime="20170531 17:54:21.916" starttime="20170531 17:54:18.816"></status>
+<status status="PASS" endtime="20170531 18:55:39.330" starttime="20170531 18:55:36.339"></status>
+</kw>
+<status status="PASS" endtime="20170531 18:55:39.330" starttime="20170531 18:54:36.246"></status>
+</kw>
+<kw type="foritem" name="${INDEX} = 2">
+<kw name="Button Click" library="CLB">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="secondary"]/div/aside[1]/a</arg>
+</arguments>
+<msg timestamp="20170531 18:55:39.331" level="INFO">Clicking element 'xpath=//*[@id="secondary"]/div/aside[1]/a'.</msg>
+<status status="PASS" endtime="20170531 18:55:39.416" starttime="20170531 18:55:39.331"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>10s</arg>
+<arg>1m</arg>
 </arguments>
-<msg timestamp="20170531 17:54:31.917" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20170531 17:54:31.918" starttime="20170531 17:54:21.916"></status>
+<msg timestamp="20170531 18:56:39.417" level="INFO">Slept 1 minute</msg>
+<status status="PASS" endtime="20170531 18:56:39.417" starttime="20170531 18:55:39.416"></status>
+</kw>
+<status status="PASS" endtime="20170531 18:56:39.417" starttime="20170531 18:55:39.330"></status>
+</kw>
+<kw name="Reset Browser Page" library="CLB">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170531 18:56:39.486" starttime="20170531 18:56:39.418"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Community_Site}</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20170531 18:56:39.487" level="INFO">Opening browser 'gc' to base url 'http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/'</msg>
+<status status="PASS" endtime="20170531 18:56:42.390" starttime="20170531 18:56:39.487"></status>
+</kw>
+<status status="PASS" endtime="20170531 18:56:42.391" starttime="20170531 18:56:39.418"></status>
+</kw>
+<status status="PASS" endtime="20170531 18:56:42.391" starttime="20170531 18:55:39.330"></status>
+</kw>
+<kw type="foritem" name="${INDEX} = 3">
+<kw name="Button Click" library="CLB">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="secondary"]/div/aside[1]/a</arg>
+</arguments>
+<msg timestamp="20170531 18:56:42.392" level="INFO">Clicking element 'xpath=//*[@id="secondary"]/div/aside[1]/a'.</msg>
+<status status="PASS" endtime="20170531 18:56:42.472" starttime="20170531 18:56:42.392"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1m</arg>
+</arguments>
+<msg timestamp="20170531 18:57:42.474" level="INFO">Slept 1 minute</msg>
+<status status="PASS" endtime="20170531 18:57:42.475" starttime="20170531 18:56:42.472"></status>
+</kw>
+<status status="PASS" endtime="20170531 18:57:42.475" starttime="20170531 18:56:42.391"></status>
+</kw>
+<kw name="Reset Browser Page" library="CLB">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170531 18:57:42.550" starttime="20170531 18:57:42.476"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Community_Site}</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20170531 18:57:42.550" level="INFO">Opening browser 'gc' to base url 'http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/'</msg>
+<status status="PASS" endtime="20170531 18:57:45.585" starttime="20170531 18:57:42.550"></status>
+</kw>
+<status status="PASS" endtime="20170531 18:57:45.586" starttime="20170531 18:57:42.475"></status>
+</kw>
+<status status="PASS" endtime="20170531 18:57:45.586" starttime="20170531 18:56:42.391"></status>
+</kw>
+<kw type="foritem" name="${INDEX} = 4">
+<kw name="Button Click" library="CLB">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="secondary"]/div/aside[1]/a</arg>
+</arguments>
+<msg timestamp="20170531 18:57:45.588" level="INFO">Clicking element 'xpath=//*[@id="secondary"]/div/aside[1]/a'.</msg>
+<status status="PASS" endtime="20170531 18:57:45.669" starttime="20170531 18:57:45.587"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1m</arg>
+</arguments>
+<msg timestamp="20170531 18:58:45.670" level="INFO">Slept 1 minute</msg>
+<status status="PASS" endtime="20170531 18:58:45.670" starttime="20170531 18:57:45.669"></status>
+</kw>
+<status status="PASS" endtime="20170531 18:58:45.670" starttime="20170531 18:57:45.586"></status>
+</kw>
+<kw name="Reset Browser Page" library="CLB">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170531 18:58:45.736" starttime="20170531 18:58:45.671"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Community_Site}</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20170531 18:58:45.737" level="INFO">Opening browser 'gc' to base url 'http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/'</msg>
+<status status="PASS" endtime="20170531 18:58:48.583" starttime="20170531 18:58:45.736"></status>
+</kw>
+<status status="PASS" endtime="20170531 18:58:48.583" starttime="20170531 18:58:45.671"></status>
+</kw>
+<status status="PASS" endtime="20170531 18:58:48.583" starttime="20170531 18:57:45.586"></status>
+</kw>
+<kw type="foritem" name="${INDEX} = 5">
+<kw name="Button Click" library="CLB">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="secondary"]/div/aside[1]/a</arg>
+</arguments>
+<msg timestamp="20170531 18:58:48.584" level="INFO">Clicking element 'xpath=//*[@id="secondary"]/div/aside[1]/a'.</msg>
+<status status="PASS" endtime="20170531 18:58:48.663" starttime="20170531 18:58:48.584"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1m</arg>
+</arguments>
+<msg timestamp="20170531 18:59:48.664" level="INFO">Slept 1 minute</msg>
+<status status="PASS" endtime="20170531 18:59:48.665" starttime="20170531 18:58:48.663"></status>
+</kw>
+<status status="PASS" endtime="20170531 18:59:48.665" starttime="20170531 18:58:48.584"></status>
+</kw>
+<kw name="Reset Browser Page" library="CLB">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170531 18:59:48.734" starttime="20170531 18:59:48.666"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Community_Site}</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20170531 18:59:48.735" level="INFO">Opening browser 'gc' to base url 'http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/'</msg>
+<status status="PASS" endtime="20170531 18:59:51.935" starttime="20170531 18:59:48.735"></status>
+</kw>
+<status status="PASS" endtime="20170531 18:59:51.935" starttime="20170531 18:59:48.665"></status>
+</kw>
+<status status="PASS" endtime="20170531 18:59:51.935" starttime="20170531 18:58:48.583"></status>
+</kw>
+<kw type="foritem" name="${INDEX} = 6">
+<kw name="Button Click" library="CLB">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="secondary"]/div/aside[1]/a</arg>
+</arguments>
+<msg timestamp="20170531 18:59:51.936" level="INFO">Clicking element 'xpath=//*[@id="secondary"]/div/aside[1]/a'.</msg>
+<status status="PASS" endtime="20170531 18:59:52.016" starttime="20170531 18:59:51.936"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1m</arg>
+</arguments>
+<msg timestamp="20170531 19:00:52.017" level="INFO">Slept 1 minute</msg>
+<status status="PASS" endtime="20170531 19:00:52.018" starttime="20170531 18:59:52.016"></status>
+</kw>
+<status status="PASS" endtime="20170531 19:00:52.018" starttime="20170531 18:59:51.935"></status>
+</kw>
+<kw name="Reset Browser Page" library="CLB">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170531 19:00:52.086" starttime="20170531 19:00:52.019"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Community_Site}</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20170531 19:00:52.087" level="INFO">Opening browser 'gc' to base url 'http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/'</msg>
+<status status="PASS" endtime="20170531 19:00:55.347" starttime="20170531 19:00:52.086"></status>
+</kw>
+<status status="PASS" endtime="20170531 19:00:55.348" starttime="20170531 19:00:52.018"></status>
+</kw>
+<status status="PASS" endtime="20170531 19:00:55.348" starttime="20170531 18:59:51.935"></status>
+</kw>
+<kw type="foritem" name="${INDEX} = 7">
+<kw name="Button Click" library="CLB">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="secondary"]/div/aside[1]/a</arg>
+</arguments>
+<msg timestamp="20170531 19:00:55.349" level="INFO">Clicking element 'xpath=//*[@id="secondary"]/div/aside[1]/a'.</msg>
+<status status="PASS" endtime="20170531 19:00:55.425" starttime="20170531 19:00:55.348"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1m</arg>
+</arguments>
+<msg timestamp="20170531 19:01:55.427" level="INFO">Slept 1 minute</msg>
+<status status="PASS" endtime="20170531 19:01:55.427" starttime="20170531 19:00:55.425"></status>
+</kw>
+<status status="PASS" endtime="20170531 19:01:55.428" starttime="20170531 19:00:55.348"></status>
+</kw>
+<kw name="Reset Browser Page" library="CLB">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170531 19:01:55.498" starttime="20170531 19:01:55.429"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Community_Site}</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20170531 19:01:55.499" level="INFO">Opening browser 'gc' to base url 'http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/'</msg>
+<status status="PASS" endtime="20170531 19:01:58.730" starttime="20170531 19:01:55.499"></status>
+</kw>
+<status status="PASS" endtime="20170531 19:01:58.730" starttime="20170531 19:01:55.428"></status>
+</kw>
+<status status="PASS" endtime="20170531 19:01:58.730" starttime="20170531 19:00:55.348"></status>
+</kw>
+<kw type="foritem" name="${INDEX} = 8">
+<kw name="Button Click" library="CLB">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="secondary"]/div/aside[1]/a</arg>
+</arguments>
+<msg timestamp="20170531 19:01:58.731" level="INFO">Clicking element 'xpath=//*[@id="secondary"]/div/aside[1]/a'.</msg>
+<status status="PASS" endtime="20170531 19:01:58.805" starttime="20170531 19:01:58.731"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1m</arg>
+</arguments>
+<msg timestamp="20170531 19:02:58.806" level="INFO">Slept 1 minute</msg>
+<status status="PASS" endtime="20170531 19:02:58.806" starttime="20170531 19:01:58.805"></status>
+</kw>
+<status status="PASS" endtime="20170531 19:02:58.806" starttime="20170531 19:01:58.730"></status>
+</kw>
+<kw name="Reset Browser Page" library="CLB">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170531 19:02:58.935" starttime="20170531 19:02:58.807"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Community_Site}</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20170531 19:02:58.936" level="INFO">Opening browser 'gc' to base url 'http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/'</msg>
+<status status="PASS" endtime="20170531 19:03:02.179" starttime="20170531 19:02:58.935"></status>
+</kw>
+<status status="PASS" endtime="20170531 19:03:02.180" starttime="20170531 19:02:58.807"></status>
+</kw>
+<status status="PASS" endtime="20170531 19:03:02.180" starttime="20170531 19:01:58.730"></status>
+</kw>
+<kw type="foritem" name="${INDEX} = 9">
+<kw name="Button Click" library="CLB">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="secondary"]/div/aside[1]/a</arg>
+</arguments>
+<msg timestamp="20170531 19:03:02.181" level="INFO">Clicking element 'xpath=//*[@id="secondary"]/div/aside[1]/a'.</msg>
+<status status="PASS" endtime="20170531 19:03:02.427" starttime="20170531 19:03:02.181"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1m</arg>
+</arguments>
+<msg timestamp="20170531 19:04:02.428" level="INFO">Slept 1 minute</msg>
+<status status="PASS" endtime="20170531 19:04:02.428" starttime="20170531 19:03:02.427"></status>
+</kw>
+<status status="PASS" endtime="20170531 19:04:02.429" starttime="20170531 19:03:02.180"></status>
+</kw>
+<kw name="Reset Browser Page" library="CLB">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170531 19:04:02.502" starttime="20170531 19:04:02.431"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Community_Site}</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20170531 19:04:02.503" level="INFO">Opening browser 'gc' to base url 'http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/'</msg>
+<status status="PASS" endtime="20170531 19:04:06.025" starttime="20170531 19:04:02.502"></status>
+</kw>
+<status status="PASS" endtime="20170531 19:04:06.025" starttime="20170531 19:04:02.429"></status>
+</kw>
+<status status="PASS" endtime="20170531 19:04:06.025" starttime="20170531 19:03:02.180"></status>
+</kw>
+<status status="PASS" endtime="20170531 19:04:06.025" starttime="20170531 18:54:36.246"></status>
 </kw>
 <kw type="teardown" name="End Web Test" library="common">
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170531 17:54:32.036" starttime="20170531 17:54:31.918"></status>
+<status status="PASS" endtime="20170531 19:04:06.164" starttime="20170531 19:04:06.026"></status>
 </kw>
-<status status="PASS" endtime="20170531 17:54:32.037" starttime="20170531 17:54:31.918"></status>
+<status status="PASS" endtime="20170531 19:04:06.165" starttime="20170531 19:04:06.026"></status>
 </kw>
-<status status="PASS" endtime="20170531 17:54:32.037" critical="yes" starttime="20170531 17:54:05.468"></status>
+<status status="PASS" endtime="20170531 19:04:06.165" critical="yes" starttime="20170531 18:54:33.086"></status>
 </test>
 <doc>This is a bot to vote multiple times for a project on the comminity field law site</doc>
-<status status="PASS" endtime="20170531 17:54:32.039" starttime="20170531 17:54:05.371"></status>
+<status status="PASS" endtime="20170531 19:04:06.171" starttime="20170531 18:54:32.941"></status>
 </suite>
 <statistics>
 <total>
