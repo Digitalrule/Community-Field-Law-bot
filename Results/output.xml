@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170531 17:47:27.250" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/ramseykilani/Documents/Development/Robot_scripts/Community Law Bot/tests/CLB.robot" id="s1" name="CLB">
+<test id="s1-t1" name="Run Button and Reset">
+<kw type="setup" name="Begin Web Test" library="common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20170531 17:47:27.347" level="INFO">Opening browser 'gc' to base url 'http://fieldlawcommunityfund.com/ideas/leftovers-foundation-lets-rescue-leftover-stampede-food/'</msg>
+<status status="PASS" endtime="20170531 17:47:30.564" starttime="20170531 17:47:27.347"></status>
+</kw>
+<status status="PASS" endtime="20170531 17:47:30.565" starttime="20170531 17:47:27.346"></status>
+</kw>
+<kw name="Button Click" library="CLB">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20170531 17:47:40.568" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20170531 17:47:40.568" starttime="20170531 17:47:30.567"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="secondary"]/div/aside[1]/a</arg>
+</arguments>
+<msg timestamp="20170531 17:47:40.569" level="INFO">Clicking button 'xpath=//*[@id="secondary"]/div/aside[1]/a'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170531 17:47:41.000" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170531 17:47:41.000" starttime="20170531 17:47:40.611"></status>
+</kw>
+<msg timestamp="20170531 17:47:41.004" level="FAIL">ValueError: Element locator 'xpath=//*[@id="secondary"]/div/aside[1]/a' did not match any elements.</msg>
+<status status="FAIL" endtime="20170531 17:47:41.004" starttime="20170531 17:47:40.568"></status>
+</kw>
+<status status="FAIL" endtime="20170531 17:47:41.005" starttime="20170531 17:47:30.566"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="common">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170531 17:47:41.146" starttime="20170531 17:47:41.006"></status>
+</kw>
+<status status="PASS" endtime="20170531 17:47:41.146" starttime="20170531 17:47:41.005"></status>
+</kw>
+<status status="FAIL" endtime="20170531 17:47:41.147" critical="yes" starttime="20170531 17:47:27.346">ValueError: Element locator 'xpath=//*[@id="secondary"]/div/aside[1]/a' did not match any elements.</status>
+</test>
+<doc>This is a bot to vote multiple times for a project on the comminity field law site</doc>
+<status status="FAIL" endtime="20170531 17:47:41.151" starttime="20170531 17:47:27.253"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="CLB" pass="0">CLB</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
